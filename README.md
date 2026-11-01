@@ -138,7 +138,7 @@ Added Complete Contract - <Your Roll Number>
 - Create a separate branch using your roll number.
 - Make sure your contract compiles and works before submitting.
 - Follow the folder structure mentioned above.
-- Ensure that your README contains the deployed contract address and Loom recording link.
+- Ensure that your README contains the deployed contract address.
 - Submit your work through a Pull Request to the original repository only.
 
 **Remember:** Your Pull Request must target the original assignment repository, not your own fork.
