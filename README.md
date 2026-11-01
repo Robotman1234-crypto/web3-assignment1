@@ -11,7 +11,7 @@
         /LCS20250XX
             ├── contract(Betting.sol
                ( you can do the entire task in single contract also if you want )
-            └── README.md containing all the details (liek name , enrolment number)
+            └── README.md containing all the details ( name , enrolment number , function implemented)
            
 
 ```
