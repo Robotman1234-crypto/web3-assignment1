@@ -1,13 +1,26 @@
 ## 📂 GitHub Submission Instructions
 
-Once you have completed and tested your contract in Remix IDE, copy your completed contract files into the cloned GitHub repository for submission.
+Once you have completed and tested your contract in Remix IDE, follow the steps below to submit your assignment.
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Fork the Original Repository
 
-First, clone the assignment repository to your local system.
+Since you won't have direct write access to the original repository, you must first create your own copy.
+
+1. Open the original GitHub assignment repository.
+2. Click on the **Fork** button (top-right corner).
+3. Select your GitHub account as the owner.
+4. Click **Create Fork**.
+
+You will now have your own copy of the assignment repository under your GitHub account.
+
+### 2️⃣ Clone Your Fork
+
+Open your forked repository and copy its HTTPS URL.
+
+Open your terminal and execute:
 
 ```bash
-git clone <repository-url>
+git clone <your-fork-url>
 ```
 
 Navigate into the cloned repository:
@@ -16,15 +29,25 @@ Navigate into the cloned repository:
 cd <repository-name>
 ```
 
-Create a new branch using your roll number:
+### 3️⃣ Create Your Own Branch
+
+Before making any changes, create a separate branch using your roll number.
 
 ```bash
 git checkout -b <your-branch-name>
 ```
 
-### 2️⃣ Create a Folder Named With Your Roll Number
+**Example:**
 
-Inside the repository, create a folder using your roll number.
+```bash
+git checkout -b LCS20250XX
+```
+
+Do not make your assignment changes directly to the `main` branch.
+
+### 4️⃣ Create a Folder Named With Your Roll Number
+
+Inside the cloned repository, create a folder using your roll number.
 
 **Example folder structure:**
 
@@ -40,9 +63,9 @@ repository/
 
 You can complete the entire assignment in a single Solidity contract.
 
-### 3️⃣ Add Required Files
+### 5️⃣ Add Required Files
 
-Your submission folder must contain:
+Your submission folder must contain the following:
 
 **1. Completed Contract (`Betting.sol`)**
 - Your fully implemented Betting smart contract.
@@ -52,17 +75,15 @@ Your submission folder must contain:
 
 Your README must contain the following details:
 
-- Your Name
+- Your Full Name
 - Enrolment Number / Roll Number
 - Functions Implemented
-- Deployed Contract Address
-- Loom Recording Link (demonstrating your contract and its functionality)
 
-### 4️⃣ Commit and Push Your Changes
+### 6️⃣ Commit and Push Your Changes
 
-After adding your files, execute the following commands from the repository directory:
+After adding your files, execute the following commands from the repository directory.
 
-Check the changes:
+Check your changes:
 
 ```bash
 git status
@@ -80,21 +101,22 @@ Commit your changes:
 git commit -m "Added Betting Contract - <Your Roll Number>"
 ```
 
-Push your branch to GitHub:
+Push your branch to your forked repository:
 
 ```bash
 git push -u origin <your-branch-name>
 ```
 
-### 5️⃣ Raise a Pull Request (PR)
+### 7️⃣ Raise a Pull Request (PR)
 
 Once your branch has been pushed successfully:
 
-1. Open the original GitHub repository.
-2. Navigate to the **Pull Requests** section.
-3. Click on **New Pull Request**.
-4. Select your branch as the compare branch.
-5. Create a pull request against the main repository branch.
+1. Open your forked repository on GitHub.
+2. Click on **Contribute → Open Pull Request** (or navigate to Pull Requests and select New Pull Request).
+3. Make sure the **base repository** is the original assignment repository.
+4. Select `main` as the base branch.
+5. Select your roll-number branch as the compare branch.
+6. Create the Pull Request.
 
 **PR Title Format:**
 
@@ -104,15 +126,19 @@ Added Complete Contract - <Your Roll Number>
 
 **PR Description Must Include:**
 
-- Your Name
+- Your Full Name
 - Your Roll Number / Enrolment Number
 - A brief description of the work completed.
 
 ### ⚠️ Important Instructions
 
-- Do not directly push changes to the main branch.
-- Create your own branch before making submissions.
+- Fork the original repository before cloning it.
+- Do not make changes directly to the original repository.
+- Do not push assignment changes directly to your `main` branch.
+- Create a separate branch using your roll number.
 - Make sure your contract compiles and works before submitting.
 - Follow the folder structure mentioned above.
 - Ensure that your README contains the deployed contract address and Loom recording link.
-- Submit your work through a Pull Request only.
+- Submit your work through a Pull Request to the original repository only.
+
+**Remember:** Your Pull Request must target the original assignment repository, not your own fork.
